@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+<bean id="dao" class="dao.ChercheurImpl"></bean>
+<bean id="metier" class="metier.chercheurmetier" init-method="init"> 
+<property name="dao" ref="dao"></property>
+</bean>
+
+<bean id="dao1" class="dao.EntrepriseImpl"></bean>
+<bean id="metier1" class="metier.entreprisemetier" init-method="init1"> 
+<property name="dao1" ref="dao1"></property>
+</bean>
+
+
+
+</beans>

@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 5 mai 2019 22:58:18 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="dao.User" table="USER">
+        <id name="idUser" type="java.lang.Long">
+            <column name="IDUSER" />
+            <generator class="native" />
+        </id>
+        <property name="emailUser" type="java.lang.String">
+            <column name="EMAILUSER" />
+        </property>
+        <property name="ecoleUser" type="java.lang.String">
+            <column name="ECOLEUSER" />
+        </property>
+        <property name="telUser" type="java.lang.String">
+            <column name="TELUSER" />
+        </property>
+        <property name="passwordUser" type="java.lang.String">
+            <column name="PASSWORDUSER" />
+        </property>
+        <set name="myEvents" table="EVENT" inverse="true" lazy="true">
+            <key>
+                <column name="IDUSER" />
+            </key>
+            <one-to-many class="dao.Event" />
+        </set>
+    </class>
+</hibernate-mapping>

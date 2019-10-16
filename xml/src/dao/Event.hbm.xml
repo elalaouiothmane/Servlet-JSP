@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 5 mai 2019 22:58:18 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="dao.Event" table="EVENT">
+        <id name="idEvent" type="java.lang.Long">
+            <column name="IDEVENT" />
+            <generator class="native" />
+        </id>
+        <property name="dateDebut" type="java.util.Date">
+            <column name="DATEDEBUT" />
+        </property>
+        <property name="dateFin" type="java.util.Date">
+            <column name="DATEFIN" />
+        </property>
+        <property name="lieuEvent" type="java.lang.String">
+            <column name="LIEUEVENT" />
+        </property>
+        <property name="titreEvent" type="java.lang.String">
+            <column name="TITREEVENT" />
+        </property>
+        <property name="descreptionEvent" type="java.lang.String">
+            <column name="DESCREPTIONEVENT" />
+        </property>
+        <many-to-one name="utilisateur" class="dao.User" fetch="join">
+            <column name="UTILISATEUR" />
+        </many-to-one>
+    </class>
+</hibernate-mapping>

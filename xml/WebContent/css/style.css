@@ -1,0 +1,278 @@
+body{
+}
+.container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse{
+    margin-right: 80px;
+}
+.navbar-inverse .navbar-nav > li > a{
+    color: white;
+    font-weight:bold;
+    padding:25px;
+    font-size:18px;
+}
+.navbar-inverse .navbar-nav > li > a:hover{
+    background-color:deepskyblue;
+    -webkit-transition:padding 0.5 ease;
+    transition:padding 0.5 ease;
+
+}
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form{
+    border-color:#14b1bb;
+}
+.navbar-inverse .navbar-toggle{
+       border-color:whitesmoke;
+ 
+}
+.navbar-brand{
+    padding-top:0px; 
+}
+.navbar-inverse .navbar-nav > .open > a, .navbar-inverse .navbar-nav > .open > a:hover, .navbar-inverse .navbar-nav > .open > a:focus{
+  background-color: #14b1bb; 
+    
+}
+.navbar-inverse .navbar-nav .open .dropdown-menu > li > a:hover{
+    color:black;
+     -webkit-transition:padding 0.5 ease;
+    transition:padding 0.5 ease;
+    
+}
+.carousel-caption{
+    bottom: 50px;
+    color: black;
+}
+.carousel-indicators .active{
+    width: 15px;
+    height: 15px;
+    background-color: coral;
+    border-color: greenyellow;
+    bottom: 0px;
+}
+.carousel-indicators{
+        bottom: 0px;
+
+}
+.about{
+    padding-bottom:22px ;
+        padding-top:22px;
+}
+.about .lead{
+    font-size: 16px;
+    color: gray;
+}
+.about h1{
+    color:blue;
+    font-weight: bold;
+}
+.features{
+    background-color: #EEE;
+    padding-bottom: 60px;
+    padding-top: 60px;
+}
+.features p{
+    line-height: 2em;
+}
+.features .feat span.glyphicon{
+    font-size: 25px;
+    color: green;
+    
+}
+.features h1{
+    margin-bottom: 30px;
+}
+.features .feat{
+        border-color: 8px solid black;
+
+}
+
+.temoin{
+    padding-bottom: 50px;
+    padding-top: 50px;
+    margin-left:120px ;
+    margin-right:120px ;
+}
+.temoin .lead{
+    line-height: 2em;
+    font-size: 15px;
+}
+.temoin span{
+    font-size: 20px;
+    color:coral;
+    text-decoration:none;
+    padding-bottom: 0px;
+}
+.temoin h1{
+    font-weight: bold;
+    color:#6A5ACD;
+}
+.temoin .carousel-inner{
+    min-height: 160px;
+    
+}
+.temoin .carousel-indicators li{
+    text-indent: 0;
+    width: 80px;
+    height: 80px;
+    box-shadow: 3px solid gray;
+    opacity: 0.5;
+    background: none;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 2px;
+
+
+}
+.temoin .carousel-indicators li.active{
+    opacity: 2;
+    border:2px solid 	#8A2BE2;
+    o-webkit-transisition:all 0.6s ease;
+    transisition:all 0.6s ease;
+}
+
+.temoin .carousel-indicators{
+position: static;
+    width: 100%;
+    margin-left: auto;
+    padding-top: -20px;
+}
+.connecter .container{
+  background-color: beige;
+    width: 500px;
+    margin-top: 100px;
+    border: 1px dashed gray;
+
+}
+.connecter .container form {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 0px;
+  
+}
+
+
+
+.completer .container{
+    background-color: beige;
+    width:670px;
+    margin-top: 70px;
+    border: 1px dashed gray;
+    margin-left: 0px;
+
+}
+.completer .container form {
+    padding-top: 50px;
+    padding-right: 50px;
+    padding-left: 50px;
+    padding-bottom: 0px;
+  
+}
+.completer{
+    display: flex;
+}
+.completer .container1{
+    background-color: azure;
+    width:670px;
+    margin-top: 70px;
+    border: 1px dashed gray;
+    margin-left: 0px;
+
+}
+.completer .container1 h4{
+ padding-left: 15px;
+ font-weight: bold;
+ text-decoration: underline;
+
+  
+}
+.completer .container1 p {
+font-size: 13px;
+padding-left: 15px;
+}
+.rechercher{
+    margin-top: 100px;
+}
+.rechercher .container .metier{
+    margin-left: 2px;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 15px;
+    margin-top: 0px;
+    
+}
+.rechercher .container .secteur{
+    margin-left: 2px;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column;
+     margin-bottom: 15px;
+    margin-top: 0px;
+    
+    
+}
+.rechercher .container .niveau{
+    margin-left: 2px;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column; 
+    margin-bottom: 15px;
+    margin-top: 0px;
+    
+}
+.rechercher .container .offre{
+    background-color: #F5F5F5;
+    padding-top: 2px;
+    padding-left: 2px;
+    padding-bottom: 5px;
+
+}
+.rechercher .container .experience{
+    margin-left: 2px;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column; 
+     margin-bottom: 15px;
+    margin-top: 0px;
+    
+}
+.rechercher .container .contrat{
+    margin-left: 2px;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column; 
+     margin-bottom: 15px;
+    margin-top: 0px;
+    
+}
+.rechercher .container .region{
+    margin-left: 2px;
+    background-color: cornsilk;
+    display: flex;
+    flex-direction: column; 
+     margin-bottom: 15px;
+    margin-top: 0px;
+    
+}
+.detaille{
+    margin-top: 100px;
+}
+.entreprise .entreprise1{
+        margin-top: 50px;
+    margin-left: 130px;
+    background-color: #F5F5F5;
+    width:1100px;
+    overflow: auto;
+    padding-left: 15px;
+}
+.entreprise .entreprise2{
+    margin-top: 50px;
+        padding-left: 15px;
+
+    margin-left: 130px;
+    background-color: #F5F5F5;
+    width:1100px;
+    overflow: auto;
+}
+
+.demandes{
+    margin-top: 100px;
+}
